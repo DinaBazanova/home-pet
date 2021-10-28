@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>HomePet</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="logo">
+                    <img src="./Common/img/logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main_page">
+    </main>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_logo">
+                <img src="./Common/img/logo.svg" alt="">
+            </div>
+            <p>455044, Магнитогорск, ул. Гагарина 17 Все права защищены</p>
+            <p>© 1999—2021 ООО «HomePet»</p>
+        </div>
+    </footer>
+    <script type="module">
+        import Menu from './Common/menu/index.js'
+        import menuContent from './Common/menu/menu.js'
+    
+        let menu = new Menu(menuContent)
+        document.querySelector('.header_inner').insertAdjacentHTML('beforeend', menu.elem)
+        
+        
+        // document.body.addEventListener("show-page", ev => {
+        //     tariffGrid.update(ev.detail)
+        // })
+        import MainPage from './01_Main/index.js'
+        let mainPage = new MainPage()
+        document.querySelector('main').append(mainPage.elem)
+    
+    
+        // import MainContent from './index.js'
+    
+        // let mainContent = new MainContent(mainPage)
+        // console.log(mainContent.elem)
+        // document.querySelector('main').insertAdjacentHTML('beforeend', mainContent.elem)
+        
+    </script>
+</body>
+
+
+</html>

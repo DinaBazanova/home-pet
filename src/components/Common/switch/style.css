@@ -1,0 +1,68 @@
+.switch_holder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 56px;
+}
+
+.switch_inner {
+	height: 67px;
+
+	padding: 8px;
+	background-color: #E2EDF4;
+	border-radius: 16px;
+}
+
+.check_box {
+	position: relative;
+	left: 0px;
+	top: 0px;
+
+	background-color: #44BBA4;
+	border-radius: 16px;
+	width: 170px;
+	height: 51px;
+	transition: all 1s ease
+}
+
+.switch_mode {
+	position: relative;
+	top: -51px;
+	width: 170px;
+	height: 51px;
+	background: none;
+	border: none;
+	border-radius: 16px;
+
+	font-size: 16px;
+	font-weight: bold;
+	color: #053C5E;
+	text-transform: uppercase;
+}
+
+.active_btn {
+	color: #ffff;
+	transition: all 0.5s ease
+}
+
+@media(max-width: 767px) {
+	.switch_holder {
+		margin-top: 32px;
+	}
+	.switch_inner {
+		height: 57px;
+	}
+	.check_box, .switch_mode {
+		height: 41px;
+		width: 150px;
+	}
+	.switch_mode {
+		top: -41px;
+	}
+}
+@media(max-width: 374px) {
+    .check_box, .switch_mode {
+		width: 130px;
+	}
+}

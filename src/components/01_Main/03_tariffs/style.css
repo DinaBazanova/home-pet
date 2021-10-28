@@ -1,0 +1,22 @@
+
+/* Tariff Grid */
+@import './tariffGrid/style.css';
+
+.tariffs {
+    margin-top: 136px;
+
+    background-image: url(./tariffGrid/img/background_tariffs.svg);
+    background-repeat: no-repeat;
+    background-position: center -200px;
+}
+@media(max-width: 1199px) {
+    .tariffs {
+        background-position: center -25px;
+        margin-top: 72px;
+    }  
+}
+@media(max-width: 767px) {
+    .tariffs {
+        margin-top: 48px;
+    }
+}

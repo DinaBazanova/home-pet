@@ -1,0 +1,426 @@
+/* Tariff Switch */
+@import './tariffSwitch/style.css';
+
+/* Tariff Grid */
+@import './tariffGrid/style.css';
+
+/* FaqQuestions */
+@import './faqQuestions/style.css';
+
+/* backgroundImage */
+@import './backgroundImage/style.css';
+
+/* menu */
+@import './menu/style.css';
+
+:root {
+    --blue: #44BBA4;
+    --red: #EC4E20;
+    --light-blue: #E2EDF4;
+    --dark-blue: #053C5E;
+    --white: #ffffff;
+    --grey: #4F4F4F;
+}
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 24px;
+}
+p {
+    margin: 0 0 0.5rem;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;   
+    margin: 0 auto;
+    z-index: 1;
+    text-align: center;
+}
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking {
+    height: 565px;
+}
+.booking_background {
+    position: relative;
+    top: -500px;
+
+    overflow-x: hidden;
+}
+
+.booking_inner {
+    text-align: center;
+}
+.booking_header {
+    padding-top: 70px;
+}
+.booking_subtitle {
+    color: var(--red);
+    margin-bottom: 40px;
+}
+.booking_title {
+    margin-bottom: 48px;
+}
+.form_holder {
+    background-color: var(--light-blue);
+    border-radius: 32px;
+    max-width: 1069px;
+    min-width: 1000px;
+    /* height: 144px; */
+    margin: 0 auto;   
+}
+.booking_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px;
+    
+}
+.form_label {
+    text-align: left;
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: bold;    
+}
+.input {
+    background-color: #ffffff;
+    width: 160px;
+    height: 56px;
+    border-radius: 16px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    padding-left: 16px;
+}
+.catOrDog {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--grey);
+    padding: 0;
+    margin-top: 16px;
+}
+.cat_dog {
+    padding: 0 16px;
+}
+.btn_submit {
+    width: 193px;
+    height: 56px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--red);
+
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #A82803;
+}
+.btn:active {
+    background-color: #861E00;
+}
+.advantages {
+    margin-top: 48px;
+}
+.title {
+    text-align: center;
+}
+.red_title {
+    color: var(--red);
+}
+.advantages_inner {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.advantage {
+    text-align: center;
+    width: 200px;
+}
+.advantage_name {
+    margin-top: 24px;
+}
+.tariffs {
+    margin-top: 136px;
+
+    background-image: url(./tariffGrid/img/background_tariffs.svg);
+    background-repeat: no-repeat;
+    background-position: center -200px;
+}
+.services_inner {
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service {
+    margin-bottom:  48px;
+    background-color: #FFF4E6;
+    border-radius: 16px;
+    text-align: center;
+    width: 270px;
+}
+.service_image {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+.service_name {
+    text-transform: uppercase;
+}
+.service_price {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    color: var(--red);
+}
+.service_price>span {
+    font-size: 48px;
+}
+.faq {
+    margin-top: 136px;
+}
+.feedback {
+    margin-top: 225px;
+    height: 620px;
+}
+.feedback_background {
+    position: relative;
+    top: -625px;
+
+    overflow-x: hidden;
+}
+.feedback_inner {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: 513px;
+    background-color: var(--light-blue);
+    border-radius: 16px;
+}
+.feedback_header {
+    padding-top: 48px;
+}
+.feedback_title {
+    margin-bottom: 16px;
+}
+.feedback_subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.feedback_holder {
+    width: 384px;
+    margin: 0 auto;
+}
+.feedback_form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feedback_label {
+    text-align: left;
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 24px;   
+}
+.label_name {
+    margin-bottom: 8px;
+}
+.feedback_label>input {
+    width: 384px;
+    height: 51px;
+    border: none;
+    border-radius: 16px;
+}
+.feedback_submit {
+    margin-top: 16px;
+    width: 384px;
+    height: 51px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--red);
+
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+.contacts {
+    margin-top: 112px;
+}
+.contacts_header {
+    text-align: center;
+}
+.contacts_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 56px;
+}
+.contacts_info {
+    text-align: left;
+}
+.info_name {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.info_value {
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+.social_link {
+    margin-top: 16px;
+}
+.social_link >a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+.contacts_map>div>iframe {
+    max-width: 700px;
+    border: none;
+    border-radius: 16px;
+}
+.footer {
+    margin-top: 116px;
+}
+.footer_container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 273px;
+    margin: 0 auto;
+    padding-top: 48px;
+
+    text-align: center;
+    background-color: #E2EDF4;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer_logo {
+    margin-bottom: 32px;
+}
+.footer>p {
+    margin-bottom: 24px;
+}
+
+@media(max-width: 1199px) {
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .nav_link {
+        margin: 10px 14px;
+    }
+    .booking {
+        height: 590px;
+    }
+    .booking_header {
+        padding-top: 50px;
+    }
+    .form_holder {
+        width: 700px;
+        min-width: 0px;
+    }
+    .booking_form {
+        flex-wrap: wrap;
+        padding-bottom: 48px;
+    }
+    .form_label {
+        margin-bottom: 32px;
+    }
+    .input {
+        width: 170px;
+    }
+    .btn_submit {
+        width: 190px;
+    }
+    .booking_background {
+        top: -530px;
+    }
+    .advantages_inner {
+        display: inline-block;
+        columns: 2;
+    }
+    .advantage {
+        margin: 0 48px 48px 48px;
+    }
+    .tariffs, .services, .faq {
+        margin-top: 72px;
+    }
+    .tariffs {
+        background-position: center -25px;
+    }
+    .services_inner {
+        display: inline-block;
+        columns: 2;
+    }
+    .service {
+        margin: 0 24px 48px 24px;
+    }
+    .feedback {
+        margin-top: 136px;
+    }
+    .feedback_inner {
+        width: 600px;
+    }
+    .contacts_inner {
+        justify-content: center;
+    }
+    .contacts_info {
+        margin-bottom: 32px;
+    }  
+}
+@media(max-width: 767px) {
+
+}

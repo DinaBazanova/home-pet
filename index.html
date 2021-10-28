@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a href="" class="logo"><img src="/Хвостики/img/logo.svg" alt="HOMEPET"></a></li>
+                <li><a href="">ТАРИФЫ</a></li>
+                <li><a href="">ДОП.УСЛУГИ</a></li>
+                <li><a href="">ВОПРОС-ОТВЕТ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+                <li><button class="nav_btn" type="button">+7 (910) 486-40-00</button>
+            </ul>
+        </nav>
+    </header>
+    <div class="page1">
+        <h3 class="title_main">Уезжаете в отпуск? В командировку? По неотложным делам?</h3>
+        <h1>Позаботимся о вашем<br>пушистом друге</h1>
+        <div class="reservation">
+            <ul class="booking">
+                <li>ДАТА ЗАЕЗДА
+                    <form action="">
+                        <p><input type="date" name="checkin"></p> 
+                    </form>
+                </li>
+                <li>ДАТА ОТЪЕЗДА
+                    <form action="">
+                        <p><input type="date" name="checkout"></p> 
+                    </form>
+                </li>
+                <li>ТАРИФ
+                    <form action="">
+                        <p><select>
+                            <option>Стандарт</option>
+                            <option>Комфорт</option>
+                            <option>Премиум</option>
+                        </select></p>
+                    </form>
+                </li>
+                <li class="radio">
+                    <form action="">
+                        <input type="radio" name="catOrDog" value="кот">кот 
+                        <input type="radio" name="catOrDog" value="пес">пес 
+                    </form>    
+                </li>
+                <li><a class="booking_btn" href="№" >УЗНАТЬ ЦЕНУ</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="page2">
+        <h2><p><span class="title_main">Ухаживаем </span><span>за каждым</span><br>хвостиком с особой любовью</p></h2>
+        <ul class="advantages">
+            <li><img src="/Хвостики/img/advantage_01.svg" alt="rooms"><p>ПРОСТОРНЫЕ<br>НОМЕРА</p></li>
+            <li><img src="/Хвостики/img/advantage_02.svg" alt="webcam"><p>ОНЛАЙН<br>ВИДЕОНАБЛЮДЕНИЕ</p></li>
+            <li><img src="/Хвостики/img/advantage_03.svg" alt="veterinarian"><p>ВЕТЕРИНАР<br>24ч</p></li>
+            <li><img src="/Хвостики/img/advantage_04.svg" alt="clearness"><p>ЧИСТОТА<br>В НОМЕРАХ</p></li>
+        </ul>
+    </div>
+    <div class="page3">
+        <div class="wrapper">
+            <h2><p>Разные <span class="title_main">тарифы </span>для разных пушистых,<br>выберите какой вам по душе</p></h2>
+            <div class="container">
+                <div class="btn btn-1">
+                    <input id="switch" name="" type="checkbox">
+                    <label for="switch"></label>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-item first-row">
+                    <h3>СТАНДАРТ</h3>
+                    <img src="/Хвостики/img/cat_02.svg" alt="standart_cat">
+                    <h2 class="title_main">390 <span class="title_medium">₽/сутки</span></h2>
+                </div>
+                <div class="grid-item first-row">
+                    <h3>КОМФОРТ</h3>
+                    <img src="/Хвостики/img/cat_03.svg" alt="comfort_cat">
+                    <h2 class="title_main">590 <span class="title_medium">₽/сутки</span></h2>
+                </div>
+                <div class="grid-item first-row">
+                    <h3>ПРЕМИУМ</h3>
+                    <img src="/Хвостики/img/cat_04.svg" alt="premium_cat">
+                    <h2 class="title_main">790 <span class="title_medium">₽/сутки</span></h2>
+                </div>
+                <div class="grid-item middle-row">
+                    <p>В тариф включено:</p>
+                    <ul class="tariffInclude">
+                        <li>Размер помещения 2 кв.м.<br>2,5 х 1,7 х 1,2 (в/г/ш)</li>
+                        <li>Ежедневное общение</li>
+                        <li>Вода, лоток, миски</li>
+                        <li>Круглосуточное видеонаблюдение</li>
+                    </ul>
+                </div>
+                <div class="grid-item middle-row">
+                    <p>В тариф включено:</p>
+                    <ul class="tariffInclude">
+                        <li>Размер помещения 3 кв.м.<br>2,5 х 1,7 х 2,0 (в/г/ш)</li>
+                        <li>Ежедневное общение</li>
+                        <li>Вода, лоток, миски</li>
+                        <li>Круглосуточное видеонаблюдение</li>
+                        <li>Корм, наполнитель</li>
+                    </ul>
+                </div>
+                <div class="grid-item middle-row">
+                    <p>В тариф включено:</p>
+                    <ul class="tariffInclude">
+                        <li>Размер помещения 3 кв.м.<br>2,5 х 1,7 х 2,0 (в/г/ш)</li>
+                        <li>Ежедневное общение</li>
+                        <li>Вода, лоток, миски</li>
+                        <li>Круглосуточное видеонаблюдение</li>
+                        <li>Корм, наполнитель</li>
+                        <li>Игровая зона</li>
+                    </ul>
+                </div>
+                <div class="grid-item last-row">
+                    <a class="showphoto_btn" href="№" >ПОСМОТРЕТЬ ФОТО</a>
+                </div>
+                <div class="grid-item last-row">
+                    <a class="showphoto_btn" href="№" >ПОСМОТРЕТЬ ФОТО</a>
+                </div>
+                <div class="grid-item last-row">
+                    <a class="showphoto_btn" href="№" >ПОСМОТРЕТЬ ФОТО</a>
+                </div>
+            </div> 
+        </div>  
+    </div>
+
+    <div class="page2">
+        <h2><p><span class="title_main">Ухаживаем </span><span>за каждым</span><br>хвостиком с особой любовью</p></h2>
+        <ul class="advantages">
+            <li><img src="/Хвостики/img/services_01.svg" alt="grooming"><p>РУМИНГ<br><span class="title_little">от </span>1 500 <span class="title_little">₽</span></p></li>
+            <li><img src="/Хвостики/img/services_02.svg" alt="taxi"><p>ЗООТАКСИ<br><span class="title_little">от </span>1 500 <span class="title_little">₽</span></p></li>
+            <li><img src="/Хвостики/img/services_03.svg" alt="cynologist"><p>КИНОЛОГ<br><span class="title_little">от </span>1 500 <span class="title_little">₽</span></p></li>
+            <li><img src="/Хвостики/img/services_04.svg" alt="dog walking"><p>ДОП.ВЫГУЛ<br><span class="title_little">от </span>1 500 <span class="title_little">₽</span></p></li>
+        </ul>
+    </div>
+
+    <div class="page4">
+        <h2><p>Нас <span class="title_main">часто спрашивают,</span><br>а мы подробно отвечаем</p></h2>
+               
+        <div class="grid-faq">
+            <div class="grid-item first-column">
+                <ul class="faq">
+                    <li><button class="faq_btn" type="button">ПРАВИЛА ЗАСЕЛЕНИЯ</button>
+                    <li><button class="faq_btn" type="button">ЧТО ВЗЯТЬ С СОБОЙ</button>
+                    <li><button class="faq_btn" type="button">ГОСТЕВОЙ ВИЗИТ</button>
+                    <li><button class="faq_btn" type="button">КАК ЗАБРОНИРОВАТЬ НОМЕР</button>
+                    <li><button class="faq_btn" type="button">ОТМЕНА БРОНИРОВАНИЯ</button>
+                </ul>
+            </div>
+            <div class="grid-item second-column">Заселение и выселение проводится с 11:00 до 20:00. Если у вас нет возможности приехать в это время, сообщите нам, мы решим эту проблему.</div>
+        </div>         
+    </div>
+
+    <div class="page5">
+        <div class="forma">
+            <h2>Остались <span class="title_main">вопросы</span>?</h2>
+            <p>Оставьте свой номер телефона<br>и мы ответим на все ваши вопросы</p>
+            <form class="fill" action="">
+                <span>ВАШЕ ИМЯ</span>
+                <div class="user"><input type="text"></div>
+                <span>НОМЕР ТЕЛЕФОНА</span>
+                <div class="user"><input type="tel"></div>
+                <button class="form_btn" type="button">ЖДУ ЗВОНКА</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

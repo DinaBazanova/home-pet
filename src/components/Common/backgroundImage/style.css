@@ -1,0 +1,127 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.bg1 {
+    position: relative;
+    top: 0px;
+    left: 285px;
+    z-index: -2;
+}
+.bg2 {
+    position: relative;
+    top: 45px;
+    left: 347px;
+    z-index: -2;
+}
+.bg_dog {
+    position: relative;
+    top: 35px;
+    left: -970px;
+    z-index: -1;
+}
+.bg_cat {
+    position: relative;
+    top: 25px;
+    left: -105px;
+    z-index: -1;
+}
+.bg_bone1 {
+    position: relative;
+    top: 225px;
+    left: -1215px;
+    z-index: 1;
+}
+.bg_bone2 {
+    position: relative;
+    top: -130px;
+    left: -255px;
+    z-index: 1;
+}
+.bg_fish1 {
+    position: relative;
+    top: 45px;
+    left: -545px;
+    z-index: 1;
+}
+.bg_fish2 {
+    position: relative;
+    top: -165px;
+    left: -1495px;
+    z-index: 1;
+}
+.feedback_bg {
+    position: relative;
+    top: 5px;
+    left: 300px;
+    z-index: -1;
+}
+.feedback_bg_cat1 {
+    position: relative;
+    top: 205px;
+    left: -120px;
+    z-index: 1;
+}
+.feedback_bg_cat2 {
+    position: relative;
+    top: -145px;
+    left: -1280px;
+    z-index: -1;
+}
+.feedback_bg_bone {
+    position: relative;
+    top: 239px;
+    left: -730px;
+    z-index: 1;
+}
+.feedback_bg_fish {
+    position: relative;
+    top: -240px;
+    left: -32px;
+    z-index: 1;
+}
+@media(max-width: 1199px) {
+    .bg1 {
+        left: 166px;
+        top: 0px;
+    }
+    .bg_dog, .bg_cat {
+        display: none;
+    }
+    .bg_fish1 {
+        top: 245px;
+        left: -685px;
+        transform: scale(-1,1)
+    }
+    .bg_fish2 {
+        top: -50px;
+        left: -1170px;
+        transform: scale(1.5,1.5)
+    }
+    .bg_bone2 {
+        top: -24px;
+        left: -285px;
+        transform: scale(1.5,1.5)
+    }
+    .bg_bone1 {
+        display: none;
+    }
+    .feedback_bg {
+        top: 0px;
+        left: 0px;
+    }
+    .feedback_bg_cat1, .feedback_bg_cat2 {
+        display: none;
+    }
+    .feedback_bg_bone {
+        top: 225px;
+        left: -900px;
+    }
+    .feedback_bg_fish {
+        top: -245px;
+        left: -380px;
+    }
+}

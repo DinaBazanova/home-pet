@@ -1,0 +1,122 @@
+.faq_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+.faq_questions {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.faq_btn{
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 563px;
+    height: 76px;
+    background-color: #E2EDF4;
+    border-radius: 16px;
+    border: none;
+}
+.faq_btn:hover{
+    background-color: #90d6c8;
+}
+.faq_btn>span {
+    margin-left: 40px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #053C5E;
+    text-transform: uppercase;   
+}
+.faq_arrow {
+    margin-right: 40px;
+}
+.active {
+    background-color: #44BBA4;
+}
+.active>span {
+    color: #ffff;
+}
+.faq_answers {
+    font-size: 18px;
+    color: #053C5E;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: left;
+
+    width: 563px;
+}
+.faq_answers>ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+.faq_answers>p {
+    text-indent: 32px;
+}
+.faq_answers>ol {
+    margin-top: 0;
+    padding-left: 0;
+}
+.faq_answers>ul>li {
+    margin: 8px 0px 8px 40px;
+}
+.faq_answers>ol>li{
+    margin: 8px 0px 8px 40px;
+}
+
+@media(max-width: 1199px) {
+    .faq_inner {
+        margin-left: 32px;
+    }
+    .faq_btn>span {
+        margin-left: 24px;
+        font-size: 16px;
+    }
+    .faq_arrow {
+        margin-right: 24px;
+    }
+    .faq_answers {
+        padding-left: 32px;
+        width: 50%;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;    
+    }
+}
+@media(max-width: 767px) {
+    .faq_inner {
+        margin: 24px auto;
+    }
+    .faq_questions {
+        width: 100%;
+        justify-content: center;
+    }
+    .faq_btn {
+        width: 100%;
+        max-width: 500px;
+        height: 57px;
+    }
+    .faq_btn>span {
+        margin-left: 24px;
+        font-size: 16px;
+    }
+    .faq_arrow >img {
+        transform: rotate(90deg);
+    }
+    .faq_answers {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 0 16px;
+        margin: 0 auto;   
+    }   
+}
+@media(max-width: 568px) {
+    .faq_btn, .faq_answers {
+        max-width: 320px;
+    }
+}

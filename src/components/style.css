@@ -1,0 +1,156 @@
+/* menu */
+@import './Common/menu/style.css';
+/* switch */
+@import './Common/switch/style.css';
+
+/* Main */
+@import './01_Main/style.css';
+
+:root {
+    --blue: #44BBA4;
+    --red: #EC4E20;
+    --light-blue: #E2EDF4;
+    --dark-blue: #053C5E;
+    --white: #ffffff;
+    --grey: #4F4F4F;
+}
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: var(--dark-blue);
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+h1 {
+    font-size: 72px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 24px;
+}
+p {
+    margin: 0 0 8px;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;   
+    margin: 0 auto;
+    text-align: center;
+}
+.header {
+    padding: 14px 0;
+    position: relative;
+}
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    text-align: center;
+}
+.red_title {
+    color: var(--red);
+}
+.btn:hover {
+    background-color: #A82803;
+}
+.btn:active {
+    background-color: #861E00;
+}
+.footer {
+    margin-top: 116px;
+}
+.footer_container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 273px;
+    margin: 0 auto;
+    padding-top: 48px;
+
+    text-align: center;
+    background-color: #E2EDF4;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer_logo {
+    margin-bottom: 32px;
+}
+.footer>p {
+    margin-bottom: 24px;
+}
+
+@media(max-width: 1199px) {
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+}
+@media(max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 700px;
+    }
+    .footer {
+        margin-top: 48px;
+    }
+    .footer_container {
+        min-height: 180px;
+        padding-top: 16px;
+    }
+    .footer_logo {
+        margin-bottom: 8px;
+    }
+    .footer_logo>img {
+        transform: scale(0.67,0.67)
+    }    
+}
+@media(max-width: 374px) {
+    
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+}

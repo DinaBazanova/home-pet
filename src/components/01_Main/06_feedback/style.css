@@ -1,0 +1,134 @@
+/*FeedbackImage */
+@import './feedbackImage/style.css';
+
+.feedback {
+    margin-top: 225px;
+    height: 620px;
+}
+.feedback_background {
+    position: relative;
+    top: -625px;
+    z-index: -1;
+    overflow-x: hidden;
+}
+.feedback_inner {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+    height: auto;
+    background-color: var(--light-blue);
+    border-radius: 16px;
+}
+.feedback_header {
+    padding-top: 48px;
+}
+.feedback_title {
+    margin-bottom: 16px;
+}
+.feedback_subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.feedback_holder {
+    width: 384px;
+    margin: 0 auto;
+}
+.feedback_form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feedback_label {
+    text-align: left;
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 24px;   
+}
+.label_name {
+    margin-bottom: 8px;
+}
+.feedback_name, .feedback_phone {
+    width: 384px;
+    height: 51px;
+    border: none;
+    border-radius: 16px;
+    color: var(--dark-blue);
+}
+.feedback_submit {
+    margin-top: 16px;
+    width: 384px;
+    height: 51px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--red);
+
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+@media(max-width: 1199px) {
+    .feedback {
+        margin-top: 136px;
+    }
+    .feedback_inner {
+        width: 600px;
+    } 
+}
+@media(max-width: 767px) {
+    .feedback {
+        margin-top: 56px;
+        height: 450px;
+    }
+    .feedback_inner {
+        max-width: 500px;
+    }
+    .feedback_header {
+        padding-top: 24px;
+    }
+    .feedback_subtitle {
+        font-size: 16px;
+        margin: 0 24px 24px;
+    }
+    .feedback_holder {
+        width: 100%;
+    }
+    
+    .feedback_name, .feedback_phone, .feedback_submit {
+        max-width: 400px;
+        height: 51px;
+        border: none;
+    }
+    .feedback_submit {
+        margin: 8px auto 48px;
+    }
+}
+@media(max-width: 568px) {
+    .feedback_inner {
+        max-width: 320px;
+    }
+    .feedback_label {
+        margin-bottom: 16px;
+    }
+    .feedback_name, .feedback_phone, .feedback_submit {
+        max-width: 280px;
+        border-radius: 8px;
+    }
+    .feedback_submit {
+        margin-bottom: 24px;
+    }
+}
+@media(max-width: 374px) {
+    .feedback_inner {
+        max-width: 290px;
+    }
+    .feedback_name, .feedback_phone, .feedback_submit {
+        max-width: 250px;
+    }
+    .feedback_subtitle {
+        font-size: 14px;
+    }
+}
